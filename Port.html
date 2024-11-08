@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="ceci est mon portfolio">
+    <title>Portfolio - Développeuse Web Débutante</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="Port.css">
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">Mon Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos </a></li>
+            <li><a href="#services">Réalisations</a></li>
+            <li><a href="#services">Compétences</a></li>
+            <li><a href="#CV">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+
+
+
+    <div classe="logo">
+        <img src="image/clouds.jpg"class="logo-background">
+        <div class="logo-content">
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <p>Fatima Berjane</p>
+            <p>Développeuse Web Junior</p><br>
+        </div>
+        
+    </div>
+    
+    
+    <div class="section">
+        <div class="boxed">
+            <div class="flex">
+                <div class="w40">
+                    <h2>A propos de moi</h2>
+                </div>
+                <div class="w60">
+                    <p>Mon projet professionnel est de devenir développeur web afin de créer des sites et des applications interactives. 
+                        Passionnée par les nouvelles technologies et le design, 
+                        je souhaite maîtriser les langages de programmation tels que HTML, CSS et JavaScript, et approfondir mes compétences en frameworks comme React ou Vue.js. 
+                        Mon objectif est de concevoir des interfaces intuitives et performantes, 
+                        tout en répondant aux besoins des utilisateurs. Je me forme activement en suivant des cours et en réalisant des projets personnels pour renforcer mes compétences techniques. 
+                        Mon ambition est de m'épanouir 
+                        dans ce domaine en constante évolution et d'y apporter ma créativité et mon savoir-faire..</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section dark">
+        <div class="boxed text-center">
+             <h2>Découvrez mes compétences</h2>
+             <div class="flex gap20">
+                <div class="w25 skill">
+                    <img src="image/HTML.png">
+                    <h3>HTML</h3>
+                </div>
+                <div class="w25 skill">
+                    <img src="image/CSS.png">
+                    <h3>CSS</h3>
+                </div>
+                <div class="w25 skill">
+                    <img src="image/JS.png">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="w25 skill">
+                    <img src="image/PHP.png">
+                    <h3>PHP</h3>
+                </div>
+                <!-- <div class="w25 skill">
+                    <img src="image/Python.png">
+                    <h3>PYTHON</h3>
+                </div> -->
+             </div>  
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="boxed text-center">
+             <h2>Mes réalisations</h2>
+            <div class="flex space-between">
+                <div class="w32 realisation">
+                    <a href="https://github.com/Faty-star/Journal-Practice-Website.git">
+                        <img src="image/Design_Web.png">
+                        <h3>Site du journal</h3>
+                    </a> 
+                </div>
+                <div class="w32 realisation">
+                    <a href="/">
+                        <img src="image/jeu-virtuel.png">
+                        <h3>Projet Jeu Virtuel en cours</h3>
+                    </a> 
+                </div>
+                <div class="w32 realisation">
+                    <a href="https://github.com/Faty-star/Mon-Portfolio.git">
+                        <img src="image/portfolio.png">
+                        <h3>Portfolio</h3>
+                    </a> 
+                </div>
+            </div>  
+        </div>
+    </div>
+
+
+    <div class="slider">
+        <img src="image/tech.png"class="slider-background">
+        <div class="slider-content">
+            <h2>Mon CV</h2>
+        </div>
+        <div class="flex">
+            <img src="image/CV_Fatima_BERJANE.png"class="CV-background">
+        </div>    
+    </div>
+        
+            
+                     
+    <div class="section-contact">
+        <div class="boxed text-center">
+            <h2>Contactez-moi</h2>
+            <div class="flex space-between">
+               <div class="w32 contact">
+                    <span class="material-symbols-outlined icon">mail</span>
+                    <span class="label">E-mail</span>
+                    <span class="value">berjane47@gmail.com</span>
+               </div> 
+               <div class="w32 contact">
+                <span class="material-symbols-outlined icon ">smartphone</span>
+                <span class="label">Appel</span>
+                <span class="value">06.21.34.11.97</span>
+                </div>
+                <div class="w32 contact">
+                    <img src="image/github.png" class="icons">
+                    <span class="label">GitHub</span>
+                    <span class="value">Faty-star</span>
+               </div>  
+           </div>
+       </div>
+    </div>
+       
+    
+<footer>
+    <div class="footer">
+        <p>&copy; 2024 Fatima Berjane. Tous droits réservés. <br>mentions légales </p>
+    </div>
+        
+</footer>
+
+    <script src="Port.js"></script> 
+</body>
+</html>

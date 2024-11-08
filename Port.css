@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+}
+
+body {
+    font-family: 'inter', sans-serif;
+}
+
+.logo{
+    width: 150%;
+    min-height: 50vh;
+    background: #080808;
+    aspect-ratio: 16/9;
+    position: relative;
+    filter: brightness(50%);
+}
+
+.logo-background{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.logo-content{
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+.logo-content p{
+    color: azure;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+p{
+    font-size: 3rem;
+    line-height: 1,5em;
+}
+
+h1{
+    color: rgb(238, 248, 248);
+    font-size: 3rem;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Place la barre de navigation à droite */
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.nav-logo {
+    margin-right: auto; /* Place le logo à gauche */
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.nav-toggle {
+    display: none; /* Masqué par défaut, sera affiché sur les écrans petits */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+.nav-links {
+        display: none; /* Cacher la barre de navigation par défaut */
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 150px;
+}
+
+.nav-links.active {
+        display: flex; /* Afficher la barre de navigation lorsqu'elle est active */
+}
+
+.nav-toggle {
+        display: block; /* Afficher le bouton de menu sur les petits écrans */
+    }
+}
+
+
+.section{
+    padding: 100px 0;
+}
+
+.boxed{
+    max-width: 1280px;
+    margin-inline:auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.w40{
+    width: 40%;
+}
+
+h2{
+    font-size: 3rem;
+    margin-bottom: 100px;
+}
+
+.w60{
+    width: 60%;
+}
+.w60 p{
+    font-size: 1rem;
+ }
+
+.gap20{ 
+    gap: 20px;
+}
+.dark{
+    color:rgb(250, 246, 246); 
+    background: url(image/purse.jpg);
+    background-size: cover;
+    background-position-y: 50%;
+    filter: brightness(50%);
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+.skill{
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.w25{
+    width: 25%;
+}
+
+.skill img{
+    width: 100px;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+ .skill h3{
+    margin-top: 5px;
+    color: black;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.w32{
+    width: 32%;
+}
+
+.realisation{
+    height:auto;
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+.realisation a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: azure;
+}
+
+.realisation img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 4s ease;
+    filter: brightness(40%);
+}
+
+.realisation h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%,-50%);
+    transition: 4s ease;
+    width:max-content ;
+    opacity: 0;
+}
+
+.realisation:hover img{
+    filter: brightness(90%);
+}
+
+.realisation:hover h3{
+    opacity: 1;
+}
+
+.slider{
+    width: 100%;
+    height: 80%;
+    background: #080808;
+    aspect-ratio:inherit;
+    position: relative;
+    filter: brightness(50%);
+    
+}
+
+.slider-background{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+    display: block;
+}
+
+.slider-content{
+    position: absolute;
+    
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    color: rgb(252, 254, 254);
+}
+ 
+.slider-content h2{
+    color:  rgb(252, 254, 254);
+    font-size: 5rem;
+}
+
+.CV-background{
+    width: 500px;
+    position: absolute;
+    top: 20px;
+    right:100px;
+    opacity: 0.95;
+}
+
+
+
+.icon{
+    display: block;
+    font-size: 40px !important;
+    color: rgb(17, 3, 82);
+}
+
+.icons{
+    width: 40px;     /* Ajustez la taille selon vos besoins */
+    height: 40px;
+    vertical-align: middle; /* Aligne verticalement avec le texte */
+    margin-right: 8px;
+}
+
+.label{
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px, 0;
+    font-size: 1,5rem;
+    color: rgb(17, 3, 82);
+}
+
+.value{
+    display: block;
+    font-size: 1,5rem;
+    color:rgb(17, 3, 82);
+}
+
+.contact{
+    border: 2px dashed #0e0d0d;
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-outset;
+   
+}
+
+.section-contact{
+    width: 100%;
+    height: 50vh;
+    position:relative;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color:black
+  
+}
+footer p{
+    font-size: 1rem;
+    color:rgb(247, 239, 239);
+    
+}
